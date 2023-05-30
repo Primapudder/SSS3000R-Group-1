@@ -44,7 +44,7 @@ def whisperSpeak(text):
    subprocess.call(['espeak', '-s 80','-ven', '-a 35', text])
    
 # names related to ids: example ==> Marcelo: id=1,  etc
-names = ['None', 'Ole', 'Knut', 'Jabriil']
+names = ['None', 'User1', 'User2', 'User3']
 
 
 bool=True
@@ -200,7 +200,7 @@ while True:
             factOfDay=funList[factDay]
             
             #Weather api from openweathermap.org
-            api_key = '89237ec91daae2b690cf0fdc7ef8afb4' #Remove api key, use ur own api key
+            api_key = '' #Remove api key, use ur own api key
             city = 'Hønefoss'
             country_code = 'NO'
             api_url = f'https://api.openweathermap.org/data/2.5/weather?q={city},{country_code}&appid={api_key}&units=metric'
